@@ -71,13 +71,13 @@ const Navbar = () => {
               to="/projects" 
               className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/projects') ? 'text-primary' : 'text-light-100'} hover:text-accent hover:bg-dark-200 transition-colors`}
             >
-              Projeler
+             Portfolyo
             </Link>
             <Link 
               to="/about" 
               className={`px-3 py-2 rounded-md text-sm font-medium ${isActive('/about') ? 'text-primary' : 'text-light-100'} hover:text-accent hover:bg-dark-200 transition-colors`}
             >
-              Hakkımda
+              Ben Kimim?
             </Link>
             <a 
               href="#skills" 
@@ -133,14 +133,14 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-primary bg-dark-300' : 'text-light-100'} hover:text-accent hover:bg-dark-300`}
               onClick={toggleMenu}
             >
-              Ben Kimim??
+              Ben Kimim?
             </Link>
             <a 
               href="#skills" 
               onClick={scrollToSkills}
               className="block px-3 py-2 rounded-md text-base font-medium text-light-100 hover:text-accent hover:bg-dark-300 cursor-pointer"
             >
-              Neler Yapabilirim??
+              Neler Yapabilirim?
             </a>
             <Link 
               to="/contact" 
