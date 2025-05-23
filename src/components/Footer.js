@@ -74,7 +74,7 @@ const Footer = () => {
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider mb-4 text-primary">Connect</h3>
               <div className="flex space-x-4">
-                <a href="https://github.com/EyakutDev/Enver_Yakut_Portfolio.git" target="_blank" rel="noopener noreferrer" className="text-light-300 hover:text-primary transition-colors">
+                <a href="https://github.com/EyakutDev" target="_blank" rel="noopener noreferrer" className="text-light-300 hover:text-primary transition-colors">
                   <FaGithub size={24} />
                 </a>
                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-light-300 hover:text-primary transition-colors">
