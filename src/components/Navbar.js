@@ -126,21 +126,21 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/projects') ? 'text-primary bg-dark-300' : 'text-light-100'} hover:text-accent hover:bg-dark-300`}
               onClick={toggleMenu}
             >
-              Hakkımda
+              Portfolyo
             </Link>
             <Link 
               to="/about" 
               className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about') ? 'text-primary bg-dark-300' : 'text-light-100'} hover:text-accent hover:bg-dark-300`}
               onClick={toggleMenu}
             >
-              Ben Kimim?
+              Ben Kimim??
             </Link>
             <a 
               href="#skills" 
               onClick={scrollToSkills}
               className="block px-3 py-2 rounded-md text-base font-medium text-light-100 hover:text-accent hover:bg-dark-300 cursor-pointer"
             >
-              Neler Yapabilirim?
+              Neler Yapabilirim??
             </a>
             <Link 
               to="/contact" 
