@@ -1,5 +1,12 @@
+body {
+  background-color: #000000; /* dark-100 (siyah) */
+  color: #ffffff; /* light-100 (beyaz) */
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -34,5 +41,98 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation effects */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Outline animations */
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(0, 191, 255, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 191, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 191, 255, 0); }
+}
+
+.pulse-border {
+  animation: pulse-border 2s infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00bfff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38b6ff;
+}
+
+/* Yatay kaydırma için scrollbar gizleme */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom cursor styles */
+* {
+  /* Remove cursor: none - keep default cursor visible */
+}
+
+/* Custom cursor light beam effect */
+.cursor-beam {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle, 
+    rgba(0, 191, 255, 0.4) 0%, 
+    rgba(0, 191, 255, 0.2) 30%, 
+    rgba(0, 191, 255, 0.1) 60%, 
+    rgba(0, 191, 255, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 9995;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  filter: blur(15px);
+  transition: opacity 0.2s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.cursor-beam.active {
+  width: 150px;
+  height: 150px;
+  opacity: 0.9;
+}
+
+/* Disable cursor effects on mobile */
+@media (max-width: 768px) {
+  .cursor-beam {
+    display: none;
   }
 }
