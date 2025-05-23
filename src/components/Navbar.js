@@ -126,7 +126,7 @@ const Navbar = () => {
               className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/projects') ? 'text-primary bg-dark-300' : 'text-light-100'} hover:text-accent hover:bg-dark-300`}
               onClick={toggleMenu}
             >
-              Portfolyo
+              Hakkımda
             </Link>
             <Link 
               to="/about" 
