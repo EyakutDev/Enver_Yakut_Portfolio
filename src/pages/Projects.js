@@ -14,7 +14,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'FPS Game With Unity',
+      title: 'Unity ile FPS Oyunu',
       description: 'Gamejam yarışmasında ekibimle geliştirdiğimiz FPS masaüstü oyunu',
       image: 'https://via.placeholder.com/600x400',
       tags: ['unity', 'c#', 'blender', 'mobile gaming'],
@@ -22,7 +22,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Horror Game With Unity',
+      title: 'Uniy ile Korku Oyunu',
       description: 'Karanlık bir ormanda elinde sadece fenerle ormandan kurtulmaya çalışan oyuncu ormanda bulduğu ipuçlarıyla yoluna devam eder.',
       image: '/images/horror-game.png',
       tags: ['unity', 'c#', 'blender', '3d modeling'],
